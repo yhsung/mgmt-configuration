@@ -12,7 +12,7 @@ RUN apk add --virtual user-env \
 	bash shadow sudo
 RUN apk add --virtual build-essential \
 	asciidoc build-base bzip2 cdrkit flex \
-	gcc g++ git gettext libxslt \
+	gcc g++ git gettext libxslt linux-headers \
 	ncurses-dev zlib-dev
 # create user
 RUN useradd -m openwrt && \
